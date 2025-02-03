@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratt Baseball Dating Simulator</title>
+    <link rel="icon" href="images/favicon.png" type="favicon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-page" style="background-color: black;">
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <!-- <div class=title><h1>2025 Pratt Baseball regular season schedule</h1></div> -->
+    <div class="container">
+        <img src="images/sched.png" alt="schedule">
+    </div>
+</body>
+</html>

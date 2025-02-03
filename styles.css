@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 2rem;
+}
+
+header {
+    background-color: #000000;
+    color: #FFCE2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu a {
+    margin-right: 20px; /* Adds 20px of space between the items */
+    color: #FFCE2E;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.menu a:last-child {
+    margin-right: 0; /* Removes extra margin after the last image */
+}
+
+.menu {
+    display: flex; /* Ensures that the images stay on the same line */
+    align-items: center; /* Vertically aligns the items if needed */
+}
+
+.container img {
+    width: 100%;
+}
+
+.container {
+    padding-top: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align items to the right */
+    }
+
+    .menu a {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 0.4em;
+    }
+
+    .menu a:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last item */
+    }
+}
