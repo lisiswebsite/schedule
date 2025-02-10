@@ -46,7 +46,7 @@ header {
 }
 
 .container {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 /* Mobile */
@@ -64,4 +64,9 @@ header {
     .menu a:last-child {
         margin-bottom: 0; /* Remove bottom margin for the last item */
     }
+
+    .container {
+        padding-top: 6rem;
+    }
+    
 }
